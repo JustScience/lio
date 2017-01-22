@@ -3,32 +3,54 @@ body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	font-weight: 500;
+	color: $main-font-color;
 }
 h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
+	padding-left: 1%;
+	color: $heading-font-color;
 }
 h1, h2 {
 	line-height: 1.2;
+	&.headline {
+		font-size: 360%;
+	}
 }
 h3, h4 {
 	line-height: 1.4;
+	&.headline {
+		font-size: 300%;
+	}
 }
 h5, h6 {
 	line-height: 1.6;
+	&.headline {
+		font-size: 240%;
+	}
 }
 h2, h4, h6 {
 	font-weight: 300;
+	color: $sub-heading-font-color;
 }
 p {
 	line-height: 1.4;
 	margin: 0 0 20px 0;
 	padding: 0 1%;
+	font-weight: 500;
+	background: none;
+	color: $main-font-color;
+	@include small-tablet-down {
+		font-size: 125%;
+	}
 }
 
 
+.caps {
+	text-transform: uppercase;
+}
 .small {
-	font-size: 70%;
+	font-size: 75%;
 }
 .big {
 	font-size: 240%;

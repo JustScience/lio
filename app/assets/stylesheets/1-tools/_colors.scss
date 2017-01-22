@@ -11,7 +11,7 @@ $dk-grey: #333;
 $black: #000;
 
 // BRANDING //
-$primary: green;
+$primary: #4d3e81;
 $primary-light: lighten($primary,5%);
 $primary-dark: darken($primary,5%);
 $secondary: orange;
@@ -28,6 +28,10 @@ $shadow: rgba(0,0,0,0.6);
 $shadow-light: rgba(0,0,0,0.3);
 $shadow-dark: rgba(0,0,0,0.9);
 
+// FONTS //
+$main-font-color: darken($primary,10%);
+$heading-font-color: $primary;
+$sub-heading-font-color: $secondary-dark;
 
 /////////
 // DOM //

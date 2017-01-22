@@ -1,0 +1,36 @@
+#navbar {
+	#nav-brand {
+		.nav-brand-logo {
+			padding: 1px 12px 9px 12px;
+			color: lighten($primary,50%);
+			transition: all 333ms ease-in-out;
+			// background: $secondary;
+			// -webkit-border-radius: 50%;
+			//         border-radius: 50%;
+		}
+		.nav-brand-name {
+			
+		}
+		&:hover {
+			.nav-brand-logo {
+				color: $primary;
+			}
+		}
+	}
+	#nav-burger {
+		padding: 6px 12px 4px 12px;
+		background: none;
+		transition: all 333ms ease-in-out;
+		svg {
+			transition: all 333ms ease-in-out;
+			fill: lighten($primary,50%);
+			background: none;
+		}
+		&:hover {
+			// background: $secondary;
+			svg {
+				fill: $primary-light;
+			}
+		}
+	}
+}
