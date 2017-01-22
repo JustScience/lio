@@ -1,0 +1,365 @@
+/* --------------------- */
+/* --- DEVICE WIDTHS --- */
+/* --------------------- */
+
+$small-phone-width: 320px;
+$phone-width: 480px;
+$small-tablet-width: 640px;
+$tablet-width: 720px;
+$laptop-width: 960px;
+$desktop-width: 1280px;
+$tv-width: 1920px;
+
+/* -------------------------- */
+/* --- MEDIA QUERY MIXINS --- */
+/* -------------------------- */
+/////////////////
+// SMALL PHONE //
+/////////////////
+@mixin small-phone-only {
+  @media (max-width: #{$small-phone-width - 1px}) {
+    @content;
+  }
+}
+
+///////////
+// PHONE //
+///////////
+@mixin phone-only {
+  @media (min-width: #{$small-phone-width}) and (max-width: #{$phone-width - 1px}) {
+    @content;
+  }
+}
+@mixin phone-down {
+  @media (max-width: #{$phone-width - 1px}) {
+    @content;
+  }
+}
+@mixin phone-up {
+  @media (min-width: #{$small-phone-width}) {
+    @content;
+  }
+}
+
+//////////////////
+// SMALL-TABLET //
+//////////////////
+@mixin small-tablet-only {
+  @media (min-width: #{$phone-width}) and (max-width: #{$small-tablet-width - 1px}) {
+    @content;
+  }
+}
+@mixin small-tablet-down {
+  @media (max-width: #{$small-tablet-width - 1px}) {
+    @content;
+  }
+}
+@mixin small-tablet-up {
+  @media (min-width: #{$phone-width}) {
+    @content;
+  }
+}
+
+////////////
+// TABLET //
+////////////
+@mixin tablet-only {
+  @media (min-width: #{$small-tablet-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+@mixin tablet-down {
+  @media (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+@mixin tablet-up {
+  @media (min-width: #{$small-tablet-width}) {
+    @content;
+  }
+}
+
+////////////
+// LAPTOP //
+////////////
+@mixin laptop-only {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$laptop-width - 1px}) {
+    @content;
+  }
+}
+@mixin laptop-down {
+  @media (max-width: #{$laptop-width - 1px}) {
+    @content;
+  }
+}
+@mixin laptop-up {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+/////////////
+// DESKTOP //
+/////////////
+@mixin desktop-only {
+  @media (min-width: #{$laptop-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+@mixin desktop-down {
+  @media (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+@mixin desktop-up {
+  @media (min-width: #{$laptop-width}) {
+    @content;
+  }
+}
+
+////////
+// TV //
+////////
+@mixin tv-only {
+  @media (min-width: #{$desktop-width}) and (max-width: #{$tv-width - 1px}) {
+    @content;
+  }
+}
+@mixin tv-down {
+  @media (max-width: #{$tv-width - 1px}) {
+    @content;
+  }
+}
+@mixin tv-up {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+/* -------------------------------------- */
+/* --- REPSONSIVE HIDE & SHOW CLASSES --- */
+/* -------------------------------------- */
+
+/* ------------------- */
+/* --- SMALL-PHONE --- */
+/* ------------------- */
+
+.hide-small-phone {
+  @include small-phone {
+    display: none;
+  }
+}
+.show-small-phone {
+  @include small-phone {
+    display: block;
+  }   
+  @include phone {
+    display: none;
+  }   
+  @include small-tablet {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include laptop {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+  @include tv {
+    display: none;
+  }
+}
+
+/* ------------- */
+/* --- PHONE --- */
+/* ------------- */
+
+.hide-phone {
+  @include small-phone {
+    display: none;
+  }
+  @include phone {
+    display: none;
+  }
+}
+.show-phone {
+  @include small-phone {
+    display: block;
+  }   
+  @include phone {
+    display: block;
+  }   
+  @include small-tablet {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include laptop {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+  @include tv {
+    display: none;
+  }
+}
+
+/* -------------------- */
+/* --- SMALL-TABLET --- */
+/* -------------------- */
+
+.hide-small-tablet {
+  @include small-phone {
+    display: none;
+  }
+  @include phone {
+    display: none;
+  }
+  @include small-tablet {
+    display: none;
+  }
+}
+.show-small-tablet {
+  @include small-phone {
+    display: block;
+  }   
+  @include phone {
+    display: block;
+  }   
+  @include small-tablet {
+    display: block;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include laptop {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+  @include tv {
+    display: none;
+  }
+}
+
+/* -------------- */
+/* --- TABLET --- */
+/* -------------- */
+
+.hide-tablet {
+  @include small-phone {
+    display: none;
+  }
+  @include phone {
+    display: none;
+  }
+  @include small-tablet {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+}
+.show-tablet {
+  @include small-phone {
+    display: block;
+  }   
+  @include phone {
+    display: block;
+  }   
+  @include small-tablet {
+    display: block;
+  }
+  @include tablet {
+    display: block;
+  }
+  @include laptop {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+  @include tv {
+    display: none;
+  }
+}
+
+/* -------------- */
+/* --- LAPTOP --- */
+/* -------------- */
+
+.hide-laptop {
+  @include small-phone {
+    display: none;
+  }
+  @include phone {
+    display: none;
+  }
+  @include small-tablet {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+  @include laptop {
+    display: none;
+  }
+}
+.show-laptop {
+  @include small-phone {
+    display: block;
+  }   
+  @include phone {
+    display: block;
+  }   
+  @include small-tablet {
+    display: block;
+  }
+  @include tablet {
+    display: block;
+  }
+  @include laptop {
+    display: block;
+  }
+  @include desktop {
+    display: none;
+  }
+  @include tv {
+    display: none;
+  }
+}
+
+/* --------------- */
+/* --- DESKTOP --- */
+/* --------------- */
+
+.hide-desktop {
+  @include desktop {
+    display: none;
+  }
+}
+.show-desktop {
+  @include desktop {
+    display: block;
+  }
+}
+/* ---------- */
+/* --- TV --- */
+/* ---------- */
+
+.hide-tv {
+  @include tv {
+    display: none;
+  }
+}
+.show-tv {
+  @include tv {
+    display: block;
+  }
+}

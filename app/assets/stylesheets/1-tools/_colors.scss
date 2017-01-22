@@ -1,0 +1,59 @@
+/////////////////////////
+/* --- SITE COLORS --- */
+/////////////////////////
+
+// GREYSCALE //
+$white: #fff;
+$off-white: #f3f3f3	;
+$lt-grey: #ccc;
+$md-grey: #999;
+$dk-grey: #333;
+$black: #000;
+
+// BRANDING //
+$primary: green;
+$primary-light: lighten($primary,5%);
+$primary-dark: darken($primary,5%);
+$secondary: orange;
+$secondary-light: lighten($secondary,5%);
+$secondary-dark: darken($secondary,5%);
+
+// LINKS //
+$link-color: $secondary;
+$link-light: lighten($link-color,5%);
+$link-dark: darken($link-color,5%);
+
+// SHADOWS //
+$shadow: rgba(0,0,0,0.6);
+$shadow-light: rgba(0,0,0,0.3);
+$shadow-dark: rgba(0,0,0,0.9);
+
+
+/////////
+// DOM //
+/////////
+
+.dark {
+	color: $white;
+}
+.light {
+	color: $black;
+}
+.primary {
+	background: linear-gradient($primary,$primary-dark);
+}
+.secondary {
+	background: linear-gradient($secondary,$secondary-dark);
+}
+.white {
+	background-color: $white;
+}
+.off-white {
+	background-color: $off-white;
+}
+.black {
+	background-color: $black;
+	color: $white;
+}
+
+
