@@ -1,0 +1,42 @@
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: after,
+  container: auto,
+  container-position: center,
+  columns: 4,
+  gutters: .25,
+  column-width: false,
+  global-box-sizing: content-box,
+  last-flow: to,
+  debug: (
+    image: show,
+    color: rgba(#66f, .25),
+    output: overlay,
+    toggle: bottom right,
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
+);
+
+body {
+  @include container(100%);
+  @include phone-down {
+    @include container(4);
+  }
+  @include small-tablet-down {
+    @include container(6);
+  }
+  @include tablet-up {
+    @include container(9);
+  }
+  @include desktop-up {
+    @include container(12);
+  }
+}

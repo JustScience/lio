@@ -1,11 +1,14 @@
 
 // IMPORT TOOLS
 @import '1-tools/normalize';
+@import '1-tools/soozi/susy';
+@import '1-tools/devices';
 @import '1-tools/colors';
 @import '1-tools/fonts';
 @import '1-tools/ionicons/ionicons';
 
 // IMPORT BASE
+@import '2-base/grid';
 @import '2-base/base';
 @import '2-base/links';
 @import '2-base/custom';
@@ -18,4 +21,5 @@
 @import '3-modules/footer';
 
 // IMPORT PAGES
-
+@import '4-pages/home';
+@import '4-pages/contact';

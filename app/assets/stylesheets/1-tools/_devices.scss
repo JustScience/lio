@@ -145,30 +145,30 @@ $tv-width: 1920px;
 /* ------------------- */
 
 .hide-small-phone {
-  @include small-phone {
+  @include small-phone-only {
     display: none;
   }
 }
 .show-small-phone {
-  @include small-phone {
+  @include small-phone-only {
     display: block;
   }   
-  @include phone {
+  @include phone-only {
     display: none;
   }   
-  @include small-tablet {
+  @include small-tablet-only {
     display: none;
   }
-  @include tablet {
+  @include tablet-only {
     display: none;
   }
-  @include laptop {
+  @include laptop-only {
     display: none;
   }
-  @include desktop {
+  @include desktop-only {
     display: none;
   }
-  @include tv {
+  @include tv-only {
     display: none;
   }
 }
@@ -178,33 +178,33 @@ $tv-width: 1920px;
 /* ------------- */
 
 .hide-phone {
-  @include small-phone {
+  @include small-phone-only {
     display: none;
   }
-  @include phone {
+  @include phone-only {
     display: none;
   }
 }
 .show-phone {
-  @include small-phone {
+  @include small-phone-only {
     display: block;
   }   
-  @include phone {
+  @include phone-only {
     display: block;
   }   
-  @include small-tablet {
+  @include small-tablet-only {
     display: none;
   }
-  @include tablet {
+  @include tablet-only {
     display: none;
   }
-  @include laptop {
+  @include laptop-only {
     display: none;
   }
-  @include desktop {
+  @include desktop-only {
     display: none;
   }
-  @include tv {
+  @include tv-only {
     display: none;
   }
 }
@@ -214,36 +214,36 @@ $tv-width: 1920px;
 /* -------------------- */
 
 .hide-small-tablet {
-  @include small-phone {
+  @include small-phone-only {
     display: none;
   }
-  @include phone {
+  @include phone-only {
     display: none;
   }
-  @include small-tablet {
+  @include small-tablet-only {
     display: none;
   }
 }
 .show-small-tablet {
-  @include small-phone {
+  @include small-phone-only {
     display: block;
   }   
-  @include phone {
+  @include phone-only {
     display: block;
   }   
-  @include small-tablet {
+  @include small-tablet-only {
     display: block;
   }
-  @include tablet {
+  @include tablet-only {
     display: none;
   }
-  @include laptop {
+  @include laptop-only {
     display: none;
   }
-  @include desktop {
+  @include desktop-only {
     display: none;
   }
-  @include tv {
+  @include tv-only {
     display: none;
   }
 }
@@ -253,39 +253,39 @@ $tv-width: 1920px;
 /* -------------- */
 
 .hide-tablet {
-  @include small-phone {
+  @include small-phone-only {
     display: none;
   }
-  @include phone {
+  @include phone-only {
     display: none;
   }
-  @include small-tablet {
+  @include small-tablet-only {
     display: none;
   }
-  @include tablet {
+  @include tablet-only {
     display: none;
   }
 }
 .show-tablet {
-  @include small-phone {
+  @include small-phone-only {
     display: block;
   }   
-  @include phone {
+  @include phone-only {
     display: block;
   }   
-  @include small-tablet {
+  @include small-tablet-only {
     display: block;
   }
-  @include tablet {
+  @include tablet-only {
     display: block;
   }
-  @include laptop {
+  @include laptop-only {
     display: none;
   }
-  @include desktop {
+  @include desktop-only {
     display: none;
   }
-  @include tv {
+  @include tv-only {
     display: none;
   }
 }
@@ -295,42 +295,42 @@ $tv-width: 1920px;
 /* -------------- */
 
 .hide-laptop {
-  @include small-phone {
+  @include small-phone-only {
     display: none;
   }
-  @include phone {
+  @include phone-only {
     display: none;
   }
-  @include small-tablet {
+  @include small-tablet-only {
     display: none;
   }
-  @include tablet {
+  @include tablet-only {
     display: none;
   }
-  @include laptop {
+  @include laptop-only {
     display: none;
   }
 }
 .show-laptop {
-  @include small-phone {
+  @include small-phone-only {
     display: block;
   }   
-  @include phone {
+  @include phone-only {
     display: block;
   }   
-  @include small-tablet {
+  @include small-tablet-only {
     display: block;
   }
-  @include tablet {
+  @include tablet-only {
     display: block;
   }
-  @include laptop {
+  @include laptop-only {
     display: block;
   }
-  @include desktop {
+  @include desktop-only {
     display: none;
   }
-  @include tv {
+  @include tv-only {
     display: none;
   }
 }
@@ -340,12 +340,12 @@ $tv-width: 1920px;
 /* --------------- */
 
 .hide-desktop {
-  @include desktop {
+  @include desktop-only {
     display: none;
   }
 }
 .show-desktop {
-  @include desktop {
+  @include desktop-only {
     display: block;
   }
 }
@@ -354,12 +354,12 @@ $tv-width: 1920px;
 /* ---------- */
 
 .hide-tv {
-  @include tv {
+  @include tv-only {
     display: none;
   }
 }
 .show-tv {
-  @include tv {
+  @include tv-only {
     display: block;
   }
 }
