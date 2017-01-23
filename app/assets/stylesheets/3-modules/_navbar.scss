@@ -1,18 +1,32 @@
 #navbar {
+	position: fixed;
+	width: 100%;
+	height: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
 	#nav-brand {
 		.nav-brand-logo {
-			padding: 1px 12px 9px 12px;
+			@include span(1 of 12);
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			padding: 3px 12px 9px 12px;
 			color: lighten($primary,50%);
 			transition: all 333ms ease-in-out;
-			// background: $secondary;
-			// -webkit-border-radius: 50%;
-			//         border-radius: 50%;
 		}
 		.nav-brand-name {
-			
+			font-weight: 700;
+			color: lighten($primary,50%);
+			transition: all 333ms ease-in-out;			
 		}
 		&:hover {
 			.nav-brand-logo {
+				color: $primary;
+			}
+			.nav-brand-name {
 				color: $primary;
 			}
 		}

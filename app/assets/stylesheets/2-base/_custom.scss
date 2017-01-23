@@ -1,10 +1,17 @@
 #main-content {
 	
 }
-.container {
+.container-wide {
 	padding: 0 1%;
 	width: 98%;
-	max-width: 1440px;
+	max-width: 1140px;
+	height: auto;
+	margin: 0 auto;
+}
+.container-narrow {
+	padding: 0 10%;
+	width: 80%;
+	max-width: 1080px;
 	height: auto;
 	margin: 0 auto;
 }

@@ -1,0 +1,17 @@
+.fullscreen.hero {
+	
+}
+#home-hero-1 {
+	background: {
+		image: url('ux_hero.png');
+		position: center;
+		size: cover;
+	}
+	h1 {
+		font-size: 600%;
+		font-weight: 300;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+}

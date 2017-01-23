@@ -44,7 +44,7 @@ $sub-heading-font-color: $secondary-dark;
 	color: $black;
 }
 .primary {
-	background: linear-gradient($primary,$primary-dark);
+	background: linear-gradient($primary-light,$primary-dark);
 }
 .secondary {
 	background: linear-gradient($secondary,$secondary-dark);
