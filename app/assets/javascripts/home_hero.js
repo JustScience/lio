@@ -12,7 +12,7 @@ ready = function() {
 	homeHeroTL
 		.add('scrollOut')
 		.to($phone,1.2,{y:-660,x:-1200,ease:Power0.easeOut},'scrollOut')
-		.to($tablet,1.2,{y:-180,x:-1200,ease:Power0.easeOut},'scrollOut')
+		.to($tablet,1.2,{y:-180,x:-1500,ease:Power0.easeOut},'scrollOut')
 		.to($laptop,1.2,{y:-420,x:60,ease:Power0.easeOut},'scrollOut')
 		.to($desktop,1.2,{y:-780,ease:Power0.easeOut},'scrollOut')
 		.add('shapesOut')
