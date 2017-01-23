@@ -5,17 +5,21 @@ ready = function() {
 		$phone = $('#ux-hero-phone'),
 		$tablet = $('#ux-hero-tablet'),
 		$laptop = $('#ux-hero-laptop'),
-		$desktop = $('#ux-hero-desktop');
+		$desktop = $('#ux-hero-desktop'),
+		$headshot = $('.hero-headshot'),
+		$quote = $('.hero-quote');
 
 
 	var homeHeroTL = new TimelineMax();
 	homeHeroTL
 		.add('scrollOut')
-		.to($phone,1.2,{y:-660,x:-1200,ease:Power0.easeOut},'scrollOut')
-		.to($tablet,1.2,{y:-180,x:-1500,ease:Power0.easeOut},'scrollOut')
-		.to($laptop,1.2,{y:-420,x:60,ease:Power0.easeOut},'scrollOut')
-		.to($desktop,1.2,{y:-780,ease:Power0.easeOut},'scrollOut')
-		.add('shapesOut')
+		.to($phone,1.2,{y:-660,x:-1200,ease:Power0.easeInOut},'scrollOut')
+		.to($tablet,1.2,{y:-180,x:-1500,ease:Power0.easeInOut},'scrollOut')
+		.to($laptop,1.2,{y:-420,x:60,ease:Power0.easeInOut},'scrollOut')
+		.to($desktop,1.2,{y:-810,scale:1.1,ease:Power0.easeInOut},'scrollOut')
+		.add('devicesOut')
+		.fromTo($headshot,1.2,{x:90,autoAlpha:0,ease:Power0.easeIn},{x:0,autoAlpha:1,ease:Power0.easeIn},'scrollOut')		
+		.fromTo($quote,1.2,{x:-60,autoAlpha:0,ease:Power0.easeIn},{x:0,autoAlpha:1,ease:Power0.easeIn},'scrollOut')		
 	;
 
 	var homeHeroCtrl = new ScrollMagic.Controller();
