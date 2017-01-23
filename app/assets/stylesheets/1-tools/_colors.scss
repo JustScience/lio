@@ -38,16 +38,20 @@ $sub-heading-font-color: $secondary-dark;
 /////////
 
 .dark {
-	color: $white;
+	h1,h3,h5,p {
+		color: $off-white;
+	}
 }
 .light {
 	color: $black;
 }
 .primary {
 	background: linear-gradient($primary-light,$primary-dark);
+	// background-color: linear-gradient($primary-light,$primary-dark);
 }
 .secondary {
 	background: linear-gradient($secondary,$secondary-dark);
+	// background-color: linear-gradient($secondary,$secondary-dark);
 }
 .white {
 	background-color: $white;

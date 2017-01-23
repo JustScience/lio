@@ -1,50 +1,170 @@
-#navbar {
-	position: fixed;
-	width: 100%;
-	height: auto;
-	top: 0;
-	left: 0;
-	right: 0;
+/* --------------------- */
+/* --- NAVBAR STYLES --- */
+/* --------------------- */
+
+header {
+    position: fixed;
+    z-index: 9300;
+    top: 0;
 	margin: 0;
 	padding: 0;
-	#nav-brand {
-		.nav-brand-logo {
-			@include span(1 of 12);
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;
-			padding: 3px 12px 9px 12px;
-			color: lighten($primary,50%);
-			transition: all 333ms ease-in-out;
-		}
-		.nav-brand-name {
-			font-weight: 700;
-			color: lighten($primary,50%);
-			transition: all 333ms ease-in-out;			
-		}
-		&:hover {
-			.nav-brand-logo {
-				color: $primary;
-			}
-			.nav-brand-name {
-				color: $primary;
-			}
-		}
-	}
-	#nav-burger {
-		padding: 6px 12px 4px 12px;
+	width: 100%;
+    transition: all 333ms ease-in-out;
+	nav {
 		background: none;
-		transition: all 333ms ease-in-out;
-		svg {
-			transition: all 333ms ease-in-out;
-			fill: lighten($primary,50%);
-			background: none;
+		height: 60px;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		a,
+		a:link,
+		a:visited {
+			color: $white;
+			&:hover {
+				color: $secondary;
+			}
 		}
-		&:hover {
-			// background: $secondary;
-			svg {
-				fill: $primary-light;
+		.navbar-logo {
+			width: span(2 of 12 first);
+			height: 40px;
+			margin: 0;
+			margin-top: 10px;
+			margin-left: 15px;
+			#navbar-logo {
+				fill: lighten($primary,45%);
+				color: lighten($primary,45%);
+				width: 100%;
+				height: 100%;
+				transition: all 333ms ease-in-out;
+			}
+			&:hover {
+				#navbar-logo {
+					fill: $primary;
+					color: $primary;
+					// transform: scale(1.1);
+				}
+			}
+			img {
+				max-height: 100%;
+			}
+			@include tablet-only {
+				width: span(1 of 12 first);
+			}
+			@include laptop-only {
+				width: span(1 of 12 first);
+			}
+			@include desktop-only {
+				width: span(1 of 12 first);
+			}
+			@include tv-only {
+				width: span(1 of 12 first);
+			}
+		}
+		.navbar-brand {
+			width: span(3 of 12);
+			color: $white;
+			margin: 0;
+			padding: 22px;
+			padding-left: 5px;
+			font-size: 180%;
+			font-weight: 900;
+			@include desktop-only {
+				width: span(2 of 12);
+			}
+			@include tv-only {
+				width: span(3 of 24);				
+			}
+		}
+		.navbar-burger {
+			padding: 9px 10px 8px 10px;
+			fill: lighten($primary,45%);
+			transition: all 333ms ease-in-out;
+			&:hover {
+				fill: $primary;
+				// background: $primary-light;
 			}
 		}
 	}
+}
+.navbar-up {
+    top: -60px;
+}
+.scroll-hide {
+    bottom: -60px;
+}
+.is-blurred {
+	filter: blur(15px);
+	-webkit-filter: blur(15px);
+}
+
+/* ------------------------- */
+/* ---- FULL SCREEN NAV ---- */
+/* ------------------------- */
+
+#full-nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9000;
+	width: 100%;
+	height: auto;
+	min-height: 200vh;
+	display: none;
+	background: rgba(255,255,255,0.9);
+	ul {
+		margin-top: 150px;
+		overflow: scroll;
+		li {
+			padding: 20px 30px;
+			margin: 5px;
+			color: $primary;
+			font-size: 200%;
+			font-weight: 500;
+			-webkit-border-radius: 20px;
+			        border-radius: 20px;
+			transition: color 0.5s;
+			&:hover {
+				color: $primary;
+			}
+		}
+	}
+}
+
+/* ----------------------- */
+/* ---- SCROLL TO TOP ---- */
+/* ----------------------- */
+
+#scrollTop {
+	cursor: pointer;
+	display: none;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 0;
+	height: 60px;
+	z-index: 9999;
+	color: $primary;
+	padding: 5px;
+	padding-top: 0px;
+	padding-bottom: 12px;
+	background-color: rgba(255,255,255,0.9);
+	p {
+		padding: 0 3px;
+		margin: 0 auto;
+		line-height: 50%;
+	}
+	i {
+		margin: 0 auto;
+		padding-left: 10px;
+		line-height: 2px;
+	}
+	&:hover {
+		background-color: $primary;
+		p, i {
+			color: $white;
+		}
+	}
+}
+.scroll-hide {
+    bottom: -60px;
 }

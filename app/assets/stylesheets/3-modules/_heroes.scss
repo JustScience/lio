@@ -2,16 +2,96 @@
 	
 }
 #home-hero-1 {
-	background: {
-		image: url('ux_hero.png');
-		position: center;
-		size: cover;
+	background: none;
+	#ux-hero-phone,
+	#ux-hero-tablet,
+	#ux-hero-laptop,
+	#ux-hero-desktop {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
 	}
-	h1 {
-		font-size: 600%;
-		font-weight: 300;
-		margin: 0;
-		padding: 0;
-		text-align: center;
+	#ux-hero-desktop {
+		position: fixed;
+		z-index: -1;
+		-webkit-transform: translateX(-47%) translateY(-57%) scale(0.9);
+			 -moz-transform: translateX(-47%) translateY(-57%) scale(0.9);
+				-ms-transform: translateX(-47%) translateY(-57%) scale(0.9);
+				 -o-transform: translateX(-47%) translateY(-57%) scale(0.9);
+						transform: translateX(-47%) translateY(-57%) scale(0.9);
+	}
+	#ux-hero-phone {
+		z-index: -4;
+		-webkit-transform: translateX(-83%) translateY(-68%) scale(0.14);
+			 -moz-transform: translateX(-83%) translateY(-68%) scale(0.14);
+				-ms-transform: translateX(-83%) translateY(-68%) scale(0.14);
+				 -o-transform: translateX(-83%) translateY(-68%) scale(0.14);
+						transform: translateX(-83%) translateY(-68%) scale(0.14);
+	}
+	#ux-hero-tablet {
+		z-index: -3;
+		-webkit-transform: translateX(-85%) translateY(-36%) scale(0.28);
+			 -moz-transform: translateX(-85%) translateY(-36%) scale(0.28);
+				-ms-transform: translateX(-85%) translateY(-36%) scale(0.28);
+				 -o-transform: translateX(-85%) translateY(-36%) scale(0.28);
+						transform: translateX(-85%) translateY(-36%) scale(0.28);
+	}
+	#ux-hero-laptop {
+		z-index: -2;
+		-webkit-transform: translateX(-19%) translateY(-47%) scale(0.42);
+			 -moz-transform: translateX(-19%) translateY(-47%) scale(0.42);
+				-ms-transform: translateX(-19%) translateY(-47%) scale(0.42);
+				 -o-transform: translateX(-19%) translateY(-47%) scale(0.42);
+						transform: translateX(-19%) translateY(-47%) scale(0.42);
+	}
+	.hero-text {
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		z-index: 30;
+		width: 100%;
+		margin: 0 auto;
+		padding-bottom: 30px;
+		background: $off-white;
+		-webkit-transform: translateX(-50%);
+		   -moz-transform: translateX(-50%);
+		    -ms-transform: translateX(-50%);
+		     -o-transform: translateX(-50%);
+		        transform: translateX(-50%);
+		h1 {
+			font-size: 600%;
+			font-weight: 300;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+	}
+}
+#home-hero-2 {
+	position: relative;
+
+	.hero-headshot {
+		position: absolute;
+		top: 0;
+		left: -80px;
+		bottom: 0;
+		right: 0;
+		z-index: 1;
+		height: 100%;
+		overflow: visible;	
+		background: {
+			image: url('J_Galenti-Headshot-01.png');
+			position: left center;
+			repeat: no-repeat;
+		}
+	}
+	.headline {
+		position: relative;
+		margin-left: 40%;
+		margin-right: 5%;
+		z-index: 5;
+		height: 100%;
+		text-align: right;
 	}
 }

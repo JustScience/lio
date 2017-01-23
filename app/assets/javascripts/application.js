@@ -12,5 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require greensock/TweenMax
+//= require greensock/TimelineLite
+//= require greensock/easing/EasePack
+//= require greensock/jquery.gsap.js
+//= require scrlmgc
+//= require jq.scrlmgc
+//= require scrlindic
+//= require scrl.gsap
+
 //= require turbolinks
 //= require_tree .
