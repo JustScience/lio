@@ -7,7 +7,8 @@ html
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   body
-    = render 'modules/navbar'
     = render 'modules/fullnav'
-    = yield
-    = render 'modules/footer'
+    = render 'modules/navbar'
+    #main-content
+        = yield
+        = render 'modules/footer'

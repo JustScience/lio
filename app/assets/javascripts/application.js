@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require jqturbo
 //= require jquery_ujs
 //= require greensock/TweenMax
 //= require greensock/TimelineLite
@@ -20,6 +21,8 @@
 //= require jq.scrlmgc
 //= require scrlindic
 //= require scrl.gsap
+//= require rippleria
+//= require touchSwipe
 
 //= require turbolinks
 //= require_tree .

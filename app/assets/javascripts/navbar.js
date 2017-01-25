@@ -41,19 +41,17 @@ ready = function() {
         lastScrollTop = st;
     }
     // Burger Animations
-    var mkpd = $('#mkpd'),
-        stage = $('#stage'),
+    var stage = $('#stage'),
         main = $('#main-content'),
-        menu = $('#side-nav'),
-        li = $('#side-nav ul li'),
+        menu = $('#full-nav'),
+        li = $('.full-nav-link li'),
         burger = $('.navbar-burger'),
         top = $('#bg-top'),
         mid = $('#bg-mid'),
-        bot = $('#bg-bot'),
-        open = mkpd.hasClass('side-nav-open');
+        bot = $('#bg-bot');
 
     burger.mouseenter(function(){
-        if ($('#full-nav').hasClass('navbar-open')) {
+        if (menu.hasClass('fullnav-open')) {
             TweenLite.to(top, 0.6, {x:'3px',y:'-3px',rotation:46,scale:1.1, ease: Back.easeInOut});
             TweenLite.to(bot, 0.6, {x:'0',y:'3px',rotation:-46,scale:1.1, ease: Back.easeInOut});
         } else {
@@ -61,7 +59,7 @@ ready = function() {
             TweenLite.to(bot, 0.6, {y:'2px',rotation:0,scale:1, ease: Back.easeInOut});
         }
     }).mouseleave(function(){
-        if ($('#full-nav').hasClass('navbar-open')) {
+        if (menu.hasClass('fullnav-open')) {
             TweenLite.to(top, 0.6, {x:'0',y:'8px',rotation:0,scale:1, ease: Back.easeInOut});
             TweenLite.to(bot, 0.6, {x:'0',y:'-8px',rotation:0,scale:1, ease: Back.easeInOut});
         } else {
@@ -69,40 +67,40 @@ ready = function() {
             TweenLite.to(bot, 0.6, {y:'0',rotation:0,scale:1, ease: Back.easeInOut});
         }
     }).click(function(){
-        if ($('#full-nav').hasClass('navbar-open')) {
+        if (menu.hasClass('fullnav-open')) {
             TweenLite.to(top, 0.6, {x:'0',y:'-2px',rotation:0,scale:1, ease: Back.easeInOut});
             TweenLite.to(bot, 0.6, {x:'0',y:'2px',rotation:0,scale:1, ease: Back.easeInOut});
             TweenLite.to(mid, 0.6, {y:'0',rotation:0,scale:1, ease: Back.easeInOut});
-            main.removeClass('is-blurred');        
-            $('#full-nav').removeClass('navbar-open');
-            mkpd.removeClass('side-nav-open');
-            li.fadeToggle(300);
+            main.removeClass('is-blurred');
+            menu.fadeToggle();        
+            menu.removeClass('fullnav-open');
+            li.fadeToggle(200);
         } else {
             TweenLite.to(top, 0.6, {x:'3px',y:'-3px',rotation:46,scale:1.1, ease: Back.easeInOut});
             TweenLite.to(bot, 0.6, {x:'0',y:'3px',rotation:-46,scale:1.1, ease: Back.easeInOut});
             TweenLite.to(mid, 0.1, {y:'0',rotation:0,scale:0.0,ease: Power0.easeInOut});
-            main.addClass('is-blurred');        
-            $('#full-nav').addClass('navbar-open');
-            mkpd.addClass('side-nav-open');
+            main.addClass('is-blurred');
+            menu.fadeToggle();        
+            menu.addClass('fullnav-open');
             li.fadeToggle(600);
         }
     }).swipe({
         swipe: function(event, direction, distance, duration, fingerCount) {
-            if ($('#full-nav').hasClass('navbar-open')) {
+            if (menu.hasClass('fullnav-open')) {
                 TweenLite.to(top, 0.6, {x:'0',y:'-2px',rotation:0,scale:1, ease: Back.easeInOut});
                 TweenLite.to(bot, 0.6, {x:'0',y:'2px',rotation:0,scale:1, ease: Back.easeInOut});
                 TweenLite.to(mid, 0.6, {y:'0',rotation:0,scale:1, ease: Back.easeInOut});
+                menu.fadeToggle();        
                 main.removeClass('is-blurred');        
-                $('#full-nav').removeClass('navbar-open');
-                mkpd.removeClass('side-nav-open');
-                li.fadeToggle(300);
+                menu.removeClass('fullnav-open');
+                li.fadeToggle(200);
             } else {
                 TweenLite.to(top, 0.6, {x:'3px',y:'-3px',rotation:46,scale:1.1, ease: Back.easeInOut});
                 TweenLite.to(bot, 0.6, {x:'0',y:'3px',rotation:-46,scale:1.1, ease: Back.easeInOut});
                 TweenLite.to(mid, 0.1, {y:'0',rotation:0,scale:0.0,ease: Power0.easeInOut});
                 main.addClass('is-blurred');        
-                $('#full-nav').addClass('navbar-open');
-                mkpd.addClass('side-nav-open');
+                menu.fadeToggle();        
+                menu.addClass('fullnav-open');
                 li.fadeToggle(600);
             }
         }

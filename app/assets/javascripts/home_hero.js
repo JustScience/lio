@@ -7,10 +7,10 @@ ready = function() {
 		$laptop = $('#ux-hero-laptop'),
 		$desktop = $('#ux-hero-desktop'),
 		$headshot = $('.hero-headshot'),
-		$quote = $('.hero-quote');
+		$quote = $('.hero-quote'),
 
-
-	var homeHeroTL = new TimelineMax();
+		homeHeroTL = new TimelineMax();
+	
 	homeHeroTL
 		.add('scrollOut')
 		.to($phone,1.2,{y:-660,x:-1200,ease:Power0.easeInOut},'scrollOut')
@@ -26,12 +26,32 @@ ready = function() {
 	var	homeHeroScene = new ScrollMagic.Scene({
 			triggerElement: $hero,
 			triggerHook: 0,
-			duration: '100%'
+			duration: '80%'
 		})
 		.setTween(homeHeroTL)
 		.addTo(homeHeroCtrl)
 	;
 
+
+
+	var $skills = $('#skills-lists'),
+		$skill = $('.skills-list li'),
+
+		homeSkillsTL = new TimelineMax();
+
+	homeSkillsTL
+		.staggerFrom($skill, 2, {scale:1.3,x:-60,y:30,autoAlpha:0,ease:Back.easeInOut},0.4)
+	;
+
+	var homeSkillsCtrl = new ScrollMagic.Controller();
+	var	homeSkillsScene = new ScrollMagic.Scene({
+			triggerElement: $skills,
+			triggerHook: 0.8,
+			duration: '60%'
+		})
+		.setTween(homeSkillsTL)
+		.addTo(homeSkillsCtrl)
+	;
 
 };
 
