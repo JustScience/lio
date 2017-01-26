@@ -15,7 +15,7 @@
 	        transition: all 333ms ease-in-out;
 	&.fullnav-open {
 		display: block;		
-		background: transparentize($white,0.1);
+		background: transparentize($white,0.2);
 	}
 	ul#full-nav-links {
 		position: absolute;

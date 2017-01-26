@@ -34,7 +34,7 @@ input[type="button"]{
   @extend .btn;
   background-color: $primary;
   border-color: $primary;
-  color: $white;
+  color: $off-white;
   &:hover {
     background-color: $primary-light;
     border-color: $primary;

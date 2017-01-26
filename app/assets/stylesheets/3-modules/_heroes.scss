@@ -19,34 +19,34 @@
 		position: fixed;
 		z-index: -1;
 		-webkit-transform: translateX(-47%) translateY(-57%) scale(0.9);
-			 -moz-transform: translateX(-47%) translateY(-57%) scale(0.9);
-				-ms-transform: translateX(-47%) translateY(-57%) scale(0.9);
-				 -o-transform: translateX(-47%) translateY(-57%) scale(0.9);
-						transform: translateX(-47%) translateY(-57%) scale(0.9);
+		   -moz-transform: translateX(-47%) translateY(-57%) scale(0.9);
+			-ms-transform: translateX(-47%) translateY(-57%) scale(0.9);
+			 -o-transform: translateX(-47%) translateY(-57%) scale(0.9);
+				transform: translateX(-47%) translateY(-57%) scale(0.9);
 	}
 	#ux-hero-phone {
 		z-index: -4;
 		-webkit-transform: translateX(-83%) translateY(-68%) scale(0.14);
-			 -moz-transform: translateX(-83%) translateY(-68%) scale(0.14);
-				-ms-transform: translateX(-83%) translateY(-68%) scale(0.14);
-				 -o-transform: translateX(-83%) translateY(-68%) scale(0.14);
-						transform: translateX(-83%) translateY(-68%) scale(0.14);
+		   -moz-transform: translateX(-83%) translateY(-68%) scale(0.14);
+			-ms-transform: translateX(-83%) translateY(-68%) scale(0.14);
+			 -o-transform: translateX(-83%) translateY(-68%) scale(0.14);
+				transform: translateX(-83%) translateY(-68%) scale(0.14);
 	}
 	#ux-hero-tablet {
 		z-index: -3;
 		-webkit-transform: translateX(-85%) translateY(-36%) scale(0.28);
-			 -moz-transform: translateX(-85%) translateY(-36%) scale(0.28);
-				-ms-transform: translateX(-85%) translateY(-36%) scale(0.28);
-				 -o-transform: translateX(-85%) translateY(-36%) scale(0.28);
-						transform: translateX(-85%) translateY(-36%) scale(0.28);
+		   -moz-transform: translateX(-85%) translateY(-36%) scale(0.28);
+			-ms-transform: translateX(-85%) translateY(-36%) scale(0.28);
+			 -o-transform: translateX(-85%) translateY(-36%) scale(0.28);
+				transform: translateX(-85%) translateY(-36%) scale(0.28);
 	}
 	#ux-hero-laptop {
 		z-index: -2;
 		-webkit-transform: translateX(-19%) translateY(-47%) scale(0.42);
-			 -moz-transform: translateX(-19%) translateY(-47%) scale(0.42);
-				-ms-transform: translateX(-19%) translateY(-47%) scale(0.42);
-				 -o-transform: translateX(-19%) translateY(-47%) scale(0.42);
-						transform: translateX(-19%) translateY(-47%) scale(0.42);
+		   -moz-transform: translateX(-19%) translateY(-47%) scale(0.42);
+			-ms-transform: translateX(-19%) translateY(-47%) scale(0.42);
+			 -o-transform: translateX(-19%) translateY(-47%) scale(0.42);
+				transform: translateX(-19%) translateY(-47%) scale(0.42);
 	}
 	.hero-text {
 		position: absolute;
@@ -75,6 +75,8 @@
 		}
 	}
 }
+
+
 #home-hero-bio {
 	position: relative;
 
@@ -105,28 +107,4 @@
 		text-align: right;
 	}
 }
-#home-hero-skills {
-	width: 100%;
-	margin: 0 auto;
-	padding-bottom: 30px;
-	#skills-lists {
-		p {
-			margin-bottom: 0;
-		}
-		.skills-list {
-			width: 50%;
-			margin-top: 0;
-			li {			
-				padding: 10px;
-				margin: 10px;
-				font-size: 120%;
-				background: $secondary;
-				transform: scale(0.99);
-				&:hover {
-					background: $secondary-light;
-					transform: scale(1.0);
-				}
-			}	
-		}
-	}
-}
+
