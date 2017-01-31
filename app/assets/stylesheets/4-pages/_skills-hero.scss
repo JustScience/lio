@@ -9,6 +9,9 @@
 		}
 		.skills-list {
 			width: 50%;
+			@include laptop-down {
+				width: 100%;
+			}
 			margin-top: 0;
 			li.skill {			
 				position: relative;
