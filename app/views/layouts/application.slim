@@ -4,11 +4,8 @@ doctype html
 html
   head
     title 
-        - if :meta_title?
-            = yield :meta_title
-            = yield :site_title
-        - else
-            = yield :site_title
+        = yield :meta_title
+        = yield :site_title
     meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
