@@ -1,6 +1,9 @@
 class PagesController < ApplicationController
 
-	def home
+	def ux
+	end
+	
+	def pm
 	end
 	
 	def contact

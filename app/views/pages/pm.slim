@@ -1,0 +1,26 @@
+- provide(:meta_title, 'Project Manager') 
+
+#home
+	section.fullscreen.hero#home-hero-1
+		.container-wide
+			#ux-hero-phone
+				= image_tag('ux_hero-phone.png')
+			#ux-hero-tablet
+				= image_tag('ux_hero-tablet.png')
+			#ux-hero-laptop
+				= image_tag('ux_hero-laptop.png')
+			#ux-hero-desktop
+				= image_tag('ux_hero-desktop.png')
+		.hero-text.center
+			h1.headline J Galenti
+			h2.caps Product Manager
+
+	section.white#home-hero-bio
+		.container-wide
+			.hero-headshot
+			h4.headline.hero-quote I manage creative teams in a collaborative SCRUM workflow to facilitate effecient development of complex web applications.
+
+	= render 'pages/sections/skills'
+
+	section.fullscreen#project-featured
+		p.small Featured Project
