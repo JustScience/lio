@@ -18,15 +18,16 @@ ready = function() {
 		.to($laptop,1.2,{y:-420,x:60,ease:Power0.easeInOut},'scrollOut')
 		.to($desktop,1.2,{y:-810,scale:1.1,ease:Power0.easeInOut},'scrollOut')
 		.add('devicesOut')
-		.fromTo($headshot,1.2,{x:90,autoAlpha:0,ease:Power0.easeIn},{x:0,autoAlpha:1,ease:Power0.easeIn},'scrollOut')		
-		.fromTo($quote,1.2,{x:-60,autoAlpha:0,ease:Power0.easeIn},{x:0,autoAlpha:1,ease:Power0.easeIn},'scrollOut')		
+		.fromTo($headshot,1.5,{x:90,autoAlpha:0,ease:Power0.easeIn},{x:0,autoAlpha:1,ease:Power0.easeIn},'scrollOut')		
+		.fromTo($quote,1.8,{x:-60,autoAlpha:0,ease:Power0.easeIn},{x:0,autoAlpha:1,ease:Power0.easeIn},'scrollOut')		
+		.to($desktop,1.2,{autoAlpha:0,ease:Power0.easeInOut},'devicesOut')
 	;
 
 	var homeHeroCtrl = new ScrollMagic.Controller();
 	var	homeHeroScene = new ScrollMagic.Scene({
 			triggerElement: $hero,
 			triggerHook: 0,
-			duration: '80%'
+			duration: '85%'
 		})
 		.setTween(homeHeroTL)
 		.addTo(homeHeroCtrl)

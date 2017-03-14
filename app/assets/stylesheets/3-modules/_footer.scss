@@ -1,7 +1,8 @@
 #footer {
-	padding: 15px 3%;
+	padding: 30px 3%;
 	background: $primary-dark;	
 	p {
-		color: $white;
+		margin-top: 15px;
+		color: lighten($primary,15%);
 	}
 }

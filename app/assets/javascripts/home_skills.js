@@ -1,7 +1,7 @@
 var ready;
 ready = function() {
 
-	var $skills = $('#skills-lists'),
+	var $skills = $('.skills-lists'),
 		$skill = $('.skills-list li'),
 
 		homeSkillsTL = new TimelineMax();

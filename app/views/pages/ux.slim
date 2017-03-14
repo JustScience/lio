@@ -20,7 +20,25 @@
 			.hero-headshot
 			h4.headline.hero-quote I design elegant solutions to complex user experiences for mobile and web apps.
 
-	= render 'pages/sections/skills'
+	= render 'modules/process/ux-process'
 
-	section.fullscreen#project-featured
-		p.small Featured Project
+	section.fullscreen.clearfix#feature-project-frame
+		.feature-projects-aside.secondary
+			h2.center.small Recent Work
+			h3 Project Title
+			p Project Description
+		ul.featured-projects
+			li.project-thumb.white
+				h3.mid-float.center Project Title
+			li.project-thumb.white
+				h3.mid-float.center Project Title
+			li.project-thumb.white
+				h3.mid-float.center Project Title
+			li.project-thumb.white
+				h3.mid-float.center Project Title
+
+	= render 'modules/skills/ux-skills'
+
+	section.prefoot-feature.white
+		h3.center Past Work
+		= image_tag('outspring-apps.jpg')

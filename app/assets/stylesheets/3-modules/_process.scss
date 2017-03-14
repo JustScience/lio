@@ -1,0 +1,53 @@
+// PROCESS HERO
+
+.process-hero {
+	h2 {
+		color: $white;
+	}
+	ul {
+		margin: 0;
+		li.process-step {
+			float: left;
+			width: 25%;
+			padding-top: 40px;
+			// padding-bottom: 60px;
+			margin: 0;
+			height: 180px;
+			transition: all 333ms ease-in-out;
+			.process-step-icon {
+				color: $white;
+				font-size: 500%;
+				opacity: 1;
+				transition: all 333ms ease-in-out;
+			}
+			.process-step-title {
+				transform: translateY(0px);
+				transition: all 333ms ease-in-out;
+			}
+			.process-step-description {
+				margin-bottom: 0;
+				padding-left: 15px;
+				padding-right: 15px;
+				transform: scale(0.0) translateY(0px);
+				opacity: 0;
+				transition: all 333ms ease-in-out;
+			}
+			&:hover {
+				background: $primary-light;
+				.process-step-icon {
+					color: $white;
+					font-size: 0%;
+					opacity: 0;
+				}
+				.process-step-title {
+					transform: translateY(-25px);
+				}
+				.process-step-description {
+					transform: scale(1.0) translateY(-10px);
+					opacity: 1;
+				}
+				
+			}
+		}
+	}
+}

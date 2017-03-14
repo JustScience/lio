@@ -75,6 +75,30 @@ header {
 				width: span(3 of 24);				
 			}
 		}
+		.navbar-user-links {
+			transition: all 333ms ease-in-out;
+			margin: 0;
+			padding: 0;
+			li {
+				transition: all 333ms ease-in-out;
+				padding: 3px 10px;
+				border: 1px solid transparentize($primary,.93);
+				-webkit-border-radius: 6px;
+				        border-radius: 6px;
+				&:hover {
+					border: 1px solid transparentize($primary,.5);
+				}
+			}
+			a {
+				transition: all 111ms ease-in-out;
+				color: lighten($primary,45%);
+				font-size: 110%;
+				font-weight: 500;
+				&:hover {
+					color: $primary;
+				}
+			}
+		}
 		.navbar-burger {
 			padding: 9px 10px 8px 10px;
 			fill: lighten($primary,45%);

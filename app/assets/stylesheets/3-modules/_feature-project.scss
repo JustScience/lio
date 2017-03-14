@@ -1,0 +1,64 @@
+#feature-project-frame	{
+	width: 100%;
+	background-image: url('feature-bg.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+
+	.feature-projects-aside {
+		float: left;
+		width: 240px;
+		padding: 40px 15px;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		h2 {
+			color: $primary;
+			font-weight: 700;
+			margin-bottom: 90px;	
+		}
+		h3,p {
+			padding-left: 15px;
+			margin-bottom: 15px;
+		}
+	}
+	.featured-projects {
+		float: right;
+		margin: 0;
+		width: calc(100% - 240px);
+		.project-thumb {
+			float: left;
+			width: 50%;
+			height: 50%;
+			margin: 0;
+			transition: all 333ms ease-in-out;
+			background-repeat: no-repeat;
+			background-color: $white;
+			background-image: url('phone1.png');
+			background-position: center;
+			-webkit-background-size: 50%;
+			     -o-background-size: 50%;
+			        background-size: 50%;
+			h3 {
+				color: $white;
+				font-size: 240%;
+				opacity: 0;
+				transform: translate(-50%,-50%) scale(0.9);
+				transition: all 333ms ease-in-out;
+			}
+			&:hover {
+				background-color: transparentize($primary,0.2);
+				-webkit-background-size: 48%;
+				     -o-background-size: 48%;
+				        background-size: 48%;
+				h3 {
+					transform: translate(-50%,-50%) scale(1.2);
+					opacity: 1;
+					text-shadow: 0 3px 6px $shadow;
+				}
+			}
+		}
+	}
+}
