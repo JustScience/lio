@@ -1,6 +1,6 @@
 #feature-project-frame	{
 	width: 100%;
-	background-image: url('feature-bg.jpg');
+	background-image: url('my-desk.jpg');
 	background-position: center;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
@@ -15,11 +15,12 @@
 		   -moz-box-sizing: border-box;
 		        box-sizing: border-box;
 		h2 {
-			color: $primary;
+			color: $secondary;
 			font-weight: 700;
 			margin-bottom: 90px;	
 		}
 		h3,p {
+			color: $primary;
 			padding-left: 15px;
 			margin-bottom: 15px;
 		}
@@ -35,8 +36,7 @@
 			margin: 0;
 			transition: all 333ms ease-in-out;
 			background-repeat: no-repeat;
-			background-color: $white;
-			background-image: url('phone1.png');
+			background-color: transparentize($secondary,0.2);
 			background-position: center;
 			-webkit-background-size: 50%;
 			     -o-background-size: 50%;
@@ -48,6 +48,18 @@
 				transform: translate(-50%,-50%) scale(0.9);
 				transition: all 333ms ease-in-out;
 			}
+			&.zudo {
+				background-image: url('laptop1.png');			
+			}
+			&.mkpd {
+				background-image: url('phone1.png');			
+			}
+			&.castr {
+				background-image: url('desktop1.png');			
+			}
+			&.jsci {
+				background-image: url('tablet1.png');			
+			}
 			&:hover {
 				background-color: transparentize($primary,0.2);
 				-webkit-background-size: 48%;
@@ -57,6 +69,19 @@
 					transform: translate(-50%,-50%) scale(1.2);
 					opacity: 1;
 					text-shadow: 0 3px 6px $shadow;
+				}
+
+				&.zudo {
+					background-image: url('tablet1.png');			
+				}
+				&.mkpd {
+					background-image: url('laptop1.png');			
+				}
+				&.castr {
+					background-image: url('phone1.png');			
+				}
+				&.jsci {
+					background-image: url('desktop1.png');			
 				}
 			}
 		}

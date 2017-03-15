@@ -14,7 +14,7 @@ ready = function() {
 	var	processScene = new ScrollMagic.Scene({
 			triggerElement: $process,
 			triggerHook: 0.95,
-			duration: '30%'
+			duration: '20%'
 		})
 		.setTween(processTL)
 		.addTo(processCtrl)

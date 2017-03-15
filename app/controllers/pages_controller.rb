@@ -6,6 +6,18 @@ class PagesController < ApplicationController
 	def pm
 	end
 	
+	def ad
+	end
+	
+	def ep
+	end
+	
+	def pd
+	end
+	
+	def gd
+	end
+	
 	def contact
 	end
 	
