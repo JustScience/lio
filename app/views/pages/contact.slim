@@ -1,5 +1,28 @@
 - provide(:meta_title, 'Contact')
 
-#contact
-	h1 CONTACT PAGE
-	
+section#contact
+	.container-narrow.clearfix
+		h1.center.page-title HIRE ME
+
+		.contact-info
+			h1 J Galenti
+			.contact-icons
+				= link_to 'http://www.linkedin.com/in/jgalenti', target: "_blank"
+					i.ion-social-linkedin
+				= link_to 'http://www.github.com/justscience', target: "_blank"
+					i.ion-social-github
+				= link_to 'http://www.twitter.com/justscience', target: "_blank"
+					i.ion-social-twitter
+				= link_to 'http://www.skype.com/justscience', target: "_blank"
+					i.ion-social-skype
+				= link_to 'http://www.youtube.com/thejustscience', target: "_blank"
+					i.ion-social-youtube
+			= mail_to 'indeepart@gmail.com'
+				h3 indeeparts@gmail.com
+			h4 
+				| PO Box 24332
+				br
+				| Santa Fe, NM 87502
+		.contact-form
+			form
+				input name="Name"

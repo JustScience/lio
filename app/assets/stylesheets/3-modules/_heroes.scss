@@ -72,6 +72,9 @@
 			@include desktop-up {
 				font-size: 500%;
 			}
+			@include tablet-down {
+				font-size: 400%;
+			}
 		}
 	}
 }
@@ -94,17 +97,33 @@
 			position: left center;
 			repeat: no-repeat;
 		}
+		@include laptop-down {
+			background-size: 65%;
+			left: -90px;
+		}
+		@include tablet-down {
+			background-size: 65%;
+		}
 	}
 	.hero-quote {
 		
 	}
 	.headline {
 		position: relative;
-		margin-left: 40%;
-		margin-right: 5%;
+		margin-left: 35%;
+		margin-right: 3%;
 		z-index: 5;
 		height: 100%;
 		text-align: right;
+		@include tablet-only {
+			font-size: 240%;
+		}
+		@include small-tablet-down {
+			font-size: 200%;
+		}
+		@include small-tablet-down {
+			font-size: 150%;
+		}
 	}
 }
 

@@ -1,3 +1,38 @@
 #contact {
-	
+	h1.page-title {
+		font-size: 300%;
+		margin-bottom: 30px;
+	}
+	.contact-info {
+		float: left;
+		width: 49%;
+		margin: 0.5%;
+		padding: 15px;
+		background: $white;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		@include tablet-down {
+			width: 98%;
+			margin: 1%;
+		}
+		.contact-icons i {
+			margin: 5px;
+			font-size: 150%;
+		}
+	}
+	.contact-form {
+		float: left;
+		width: 49%;
+		margin: 0.5%;
+		padding: 15px;
+		background: $white;
+		-webkit-box-sizing: border-box;
+		   -moz-box-sizing: border-box;
+		        box-sizing: border-box;
+		@include tablet-down {
+			width: 98%;
+			margin: 1%;
+		}
+	}
 }

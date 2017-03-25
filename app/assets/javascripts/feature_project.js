@@ -4,6 +4,7 @@ ready = function() {
 	var $frame = $('#feature-project-frame'),
 		$aside = $('.feature-projects-aside'),
 		$project = $('.featured-projects .project-thumb'),
+		$step = $('.process-step'),
 
 		featuredTL = new TimelineMax();
 

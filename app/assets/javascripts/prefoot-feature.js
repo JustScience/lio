@@ -20,9 +20,9 @@ ready = function() {
 		.addTo(prefootCtrl)
 	;
 
-	$step.mouseenter(function(){
-	}).mouseleave(function(){
-	});
+	// $step.mouseenter(function(){
+	// }).mouseleave(function(){
+	// });
 
 };
 

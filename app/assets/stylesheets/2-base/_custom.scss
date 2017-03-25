@@ -9,7 +9,10 @@
 	margin: 0 auto;
 }
 .container-narrow {
-	padding: 0 10%;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 0 1%;
 	width: 80%;
 	max-width: 1080px;
 	height: auto;
@@ -56,6 +59,19 @@
 .pointer {
 	cursor: pointer;
 }
+
+.section-head {
+	padding: 10px;
+	h2 {
+		color: $white;
+		font-size: 100%;
+	}
+	background: $primary-light;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
 
 /* ---------------- */
 /* --- CLEARFIX --- */

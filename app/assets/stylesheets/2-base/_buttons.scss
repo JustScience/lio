@@ -34,11 +34,11 @@ input[type="button"]{
   @extend .btn;
   background-color: $primary;
   border-color: $primary;
-  color: $off-white;
+  color: $lt-grey !important;
   &:hover {
     background-color: $primary-light;
     border-color: $primary;
-    color: $white;
+    color: $white !important;
   }  
 }
 .btn-secondary {
@@ -70,6 +70,6 @@ input[type="button"]{
   &:hover {
     background-color: $secondary-light;
     border-color: $secondary-light;
-    color: $white;
+    color: $white !important;
   }  
 }

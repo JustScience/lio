@@ -4,30 +4,44 @@
 	padding-bottom: 30px;
 	position: relative;
 	.skills-lists {
+		margin-bottom: 15px;
 		p {
-			margin-bottom: 0;
+			margin-bottom: 10px;
 		}
 		.skills-list {
 			width: 50%;
+			margin-top: 0;
 			@include laptop-down {
 				width: 100%;
+				margin: 0;
 			}
-			margin-top: 0;
 			li.skill {			
 				position: relative;
 				padding: 10px;
-				margin: 10px;
+				padding-bottom: 1px;
+				margin: 10px 2%;
 				font-size: 120%;
 				background: $secondary;
 				transform: scale(0.99);
+				-webkit-box-sizing: border-box;
+				   -moz-box-sizing: border-box;
+				        box-sizing: border-box;
+				&:first-child {
+					margin-top: 0;
+				}
 				&:hover {
 					background: $secondary-light;
 					transform: scale(1.0);
+					-webkit-box-shadow: 0 6px 12px -6px $shadow;
+					        box-shadow: 0 6px 12px -6px $shadow;
 				}
 				p {
 					color: $primary;
 					position: relative;
 					z-index: 300;
+				}
+				@include tablet-down {
+					line-height: 100%;
 				}
 				.skill-level {
 					position: absolute;
@@ -37,7 +51,7 @@
 					width: 0%;
 					height: 100%;
 					transition: all 333ms ease-in-out;
-					background: darken($secondary-dark,2%);
+					background: $secondary-dark;
 				}
 			}	
 		}

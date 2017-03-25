@@ -5,7 +5,7 @@
 $small-phone-width: 320px;
 $phone-width: 480px;
 $small-tablet-width: 640px;
-$tablet-width: 720px;
+$tablet-width: 800px;
 $laptop-width: 960px;
 $desktop-width: 1280px;
 $tv-width: 1920px;
@@ -13,9 +13,11 @@ $tv-width: 1920px;
 /* -------------------------- */
 /* --- MEDIA QUERY MIXINS --- */
 /* -------------------------- */
+
 /////////////////
 // SMALL PHONE //
 /////////////////
+
 @mixin small-phone-only {
   @media (max-width: #{$small-phone-width - 1px}) {
     @content;
@@ -25,6 +27,7 @@ $tv-width: 1920px;
 ///////////
 // PHONE //
 ///////////
+
 @mixin phone-only {
   @media (min-width: #{$small-phone-width}) and (max-width: #{$phone-width - 1px}) {
     @content;
@@ -44,6 +47,7 @@ $tv-width: 1920px;
 //////////////////
 // SMALL-TABLET //
 //////////////////
+
 @mixin small-tablet-only {
   @media (min-width: #{$phone-width}) and (max-width: #{$small-tablet-width - 1px}) {
     @content;
@@ -63,6 +67,7 @@ $tv-width: 1920px;
 ////////////
 // TABLET //
 ////////////
+
 @mixin tablet-only {
   @media (min-width: #{$small-tablet-width}) and (max-width: #{$tablet-width - 1px}) {
     @content;
@@ -82,6 +87,7 @@ $tv-width: 1920px;
 ////////////
 // LAPTOP //
 ////////////
+
 @mixin laptop-only {
   @media (min-width: #{$tablet-width}) and (max-width: #{$laptop-width - 1px}) {
     @content;
@@ -101,6 +107,7 @@ $tv-width: 1920px;
 /////////////
 // DESKTOP //
 /////////////
+
 @mixin desktop-only {
   @media (min-width: #{$laptop-width}) and (max-width: #{$desktop-width - 1px}) {
     @content;
@@ -120,6 +127,7 @@ $tv-width: 1920px;
 ////////
 // TV //
 ////////
+
 @mixin tv-only {
   @media (min-width: #{$desktop-width}) and (max-width: #{$tv-width - 1px}) {
     @content;

@@ -10,9 +10,11 @@ html
     = csrf_meta_tags
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
   body
     = render 'modules/fullnav'
     = render 'modules/navbar'
+
     #main-content
         = yield
         = render 'modules/footer'
