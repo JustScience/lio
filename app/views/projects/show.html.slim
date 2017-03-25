@@ -1,0 +1,36 @@
+p#notice = notice
+
+p
+  strong Title:
+  = @project.title
+p
+  strong Role:
+  = @project.role
+p
+  strong Client:
+  = @project.client
+p
+  strong Date:
+  = @project.date
+p
+  strong Link:
+  = @project.link
+p
+  strong Description:
+  = @project.description
+p
+  strong Catergory:
+  = @project.catergory
+p
+  strong Hero 1:
+  = @project.hero_1
+p
+  strong Hero 2:
+  = @project.hero_2
+p
+  strong Hero 3:
+  = @project.hero_3
+
+= link_to 'Edit', edit_project_path(@project)
+'|
+= link_to 'Back', projects_path

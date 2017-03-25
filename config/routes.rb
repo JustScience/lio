@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :projects
 	root 'pages#ux'
 
 	get '/ux', to: 'pages#ux', as: 'ux'

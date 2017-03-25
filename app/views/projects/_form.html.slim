@@ -1,0 +1,39 @@
+= form_for @project do |f|
+  - if @project.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@project.errors.count, "error")} prohibited this project from being saved:"
+      ul
+        - @project.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :role
+    = f.text_field :role
+  .field
+    = f.label :client
+    = f.text_field :client
+  .field
+    = f.label :date
+    = f.date_select :date
+  .field
+    = f.label :link
+    = f.text_field :link
+  .field
+    = f.label :description
+    = f.text_area :description
+  .field
+    = f.label :catergory
+    = f.text_field :catergory
+  .field
+    = f.label :hero_1
+    = f.text_field :hero_1
+  .field
+    = f.label :hero_2
+    = f.text_field :hero_2
+  .field
+    = f.label :hero_3
+    = f.text_field :hero_3
+  .actions = f.submit

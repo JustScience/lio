@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  role: MyString
+  client: MyString
+  date: 2017-03-25
+  link: MyString
+  description: MyText
+  catergory: MyString
+  hero_1: MyString
+  hero_2: MyString
+  hero_3: MyString
+
+two:
+  title: MyString
+  role: MyString
+  client: MyString
+  date: 2017-03-25
+  link: MyString
+  description: MyText
+  catergory: MyString
+  hero_1: MyString
+  hero_2: MyString
+  hero_3: MyString
