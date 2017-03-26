@@ -19,6 +19,8 @@ gem 'slim-rails'
 gem 'greensock-rails'
 gem 'ionicons-rails'
 
+gem 'mail_form'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'sqlite3'

@@ -1,0 +1,17 @@
+section
+	.container-narrow
+		h1 Contact Me
+
+		= form_for @contact do |f|
+			= f.label :name
+			= f.text_field :name, required: true
+			br
+			= f.label :email
+			= f.text_field :email, required: true
+			br
+			= f.label :message
+			= f.text_area :message, as: :text
+			br
+			= f.hidden_field :nickname, hint: "leave blank"
+			br
+			= f.submit "SEND IT", class: 'btn-primary'

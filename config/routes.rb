@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-  resources :projects
+  	resources :projects
+	resources :contacts, only: [:new, :create]
+
 	root 'pages#ux'
 
 	get '/ux', to: 'pages#ux', as: 'ux'
