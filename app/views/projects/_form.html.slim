@@ -13,11 +13,17 @@
     = f.label :role
     = f.text_field :role
   .field
+    = f.label :tech
+    = f.text_field :tech
+  .field
     = f.label :client
     = f.text_field :client
   .field
     = f.label :date
     = f.date_select :date
+  .field
+    = f.label :end_date
+    = f.date_select :end_date
   .field
     = f.label :link
     = f.text_field :link
@@ -25,8 +31,14 @@
     = f.label :description
     = f.text_area :description
   .field
+    = f.label :responsibility
+    = f.text_area :responsibility
+  .field
     = f.label :catergory
     = f.text_field :catergory
+  .field
+    = f.label :logo
+    = f.text_field :logo
   .field
     = f.label :hero_1
     = f.text_field :hero_1
@@ -34,6 +46,36 @@
     = f.label :hero_2
     = f.text_field :hero_2
   .field
+    = f.label :feature_1
+    = f.text_field :feature_1
+  .field
     = f.label :hero_3
     = f.text_field :hero_3
+  .field
+    = f.label :feature_2
+    = f.text_field :feature_2
+  .field
+    = f.label :hero_4
+    = f.text_field :hero_4
+  .field
+    = f.label :feature_3
+    = f.text_field :feature_3
+  .field
+    = f.label :hero_5
+    = f.text_field :hero_5
+  .field
+    = f.label :feature_4
+    = f.text_field :feature_4
+  .field
+    = f.label :image_1
+    = f.text_field :image_1
+  .field
+    = f.label :image_2
+    = f.text_field :image_2
+  .field
+    = f.label :image_3
+    = f.text_field :image_3
+  .field
+    = f.label :image_4
+    = f.text_field :image_4
   .actions = f.submit

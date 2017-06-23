@@ -1,0 +1,72 @@
+///////////////////////
+// PROJECT SHOW PAGE //
+///////////////////////
+
+
+.project-show-logo {
+	max-width: 60px;
+	height: 45px;
+	margin-left: 30px;
+}
+
+p.small.project-show-date {
+	margin-bottom: 0;
+}
+
+p.project-show-description {
+	margin-top: 30px;
+}
+
+.project-show-features {
+	width: 100%;
+	.project-show-feature-l {
+		width: 100%;
+		padding: 25px 0 15px 0;
+		.project-show-feature-image {
+			@include span(3 of 9 first);
+			img {
+				height: 100%;
+			}
+		}
+		.project-show-feature-text {
+			@include span(6 of 9 last);
+			padding-top: 90px;
+			h2 {
+				color: $primary;
+			}
+		}
+	}
+	.project-show-feature-r {
+		width: 100%;
+		padding: 25px 0 15px 0;
+		.project-show-feature-image {
+			@include span(3 of 9 last);
+			img {
+				height: 100%;
+			}
+		}
+		.project-show-feature-text {
+			@include span(6 of 9 first);
+			padding-top: 90px;
+			text-align: right;
+			h2 {
+				color: $primary;
+			}
+		}
+	}
+}
+
+.project-show-gallery {
+	.project-show-gallery-item {
+		float: left;
+		width: 25%;
+		height: 240px;
+		background-position: center;
+		// background-image: url('http://fillmurray.com/300/350');
+		// background-attachment: fixed;
+		-webkit-background-size: cover;
+		   -moz-background-size: cover;
+			 -o-background-size: cover;
+				background-size: cover;
+  	}
+}

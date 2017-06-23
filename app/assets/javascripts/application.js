@@ -23,6 +23,7 @@
 //= require scrl.gsap
 //= require rippleria
 //= require touchSwipe
+//= require masonry
 
 //= require turbolinks
 //= require_tree .

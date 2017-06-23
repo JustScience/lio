@@ -1,36 +1,63 @@
-p#notice = notice
+- provide(:meta_title, @project.title + ' | ' + @project.role) 
 
-p
-  strong Title:
-  = @project.title
-p
-  strong Role:
-  = @project.role
-p
-  strong Client:
-  = @project.client
-p
-  strong Date:
-  = @project.date
-p
-  strong Link:
-  = @project.link
-p
-  strong Description:
-  = @project.description
-p
-  strong Catergory:
-  = @project.catergory
-p
-  strong Hero 1:
-  = @project.hero_1
-p
-  strong Hero 2:
-  = @project.hero_2
-p
-  strong Hero 3:
-  = @project.hero_3
+section.primary
+	.container-narrow
+		= image_tag(@project.hero_1)
+			
+section
+	.container-narrow
+		= link_to 'Visit Site', @project.link, class: 'right btn'
+		.clearfix
+			h1.left = @project.title
+			.project-show-logo.left
+				= image_tag(@project.logo)
+		h4 = @project.role
+		h5 = @project.tech
+		p.small.project-show-date #{@project.date.strftime("%B %Y")} - #{@project.end_date.strftime("%B %Y")}
+		h5 = @project.client
 
-= link_to 'Edit', edit_project_path(@project)
-'|
-= link_to 'Back', projects_path
+		p.project-show-description
+			strong Description: 
+			= @project.description
+
+		p.project-show-description
+			strong Responsibilities: 
+			= @project.responsibility
+
+section
+	.project-show-features
+		.project-show-feature-l.clearfix.white
+			.container-narrow.clearfix
+				.project-show-feature-image
+					= image_tag(@project.hero_2)
+				.project-show-feature-text
+					h2 = @project.feature_1
+
+		.project-show-feature-r.clearfix.off-white
+			.container-narrow.clearfix
+				.project-show-feature-text
+					h2 = @project.feature_2
+				.project-show-feature-image
+					= image_tag(@project.hero_3)
+
+		.project-show-feature-l.clearfix.white
+			.container-narrow.clearfix
+				.project-show-feature-image
+					= image_tag(@project.hero_4)
+				.project-show-feature-text
+					h2 = @project.feature_3
+
+		.project-show-feature-r.clearfix.off-white
+			.container-narrow.clearfix
+				.project-show-feature-text
+					h2 = @project.feature_4
+				.project-show-feature-image
+					= image_tag(@project.hero_5)
+
+.secondary
+	.project-show-gallery.clearfix
+		.project-show-gallery-item style="background-image: url('http://fillmurray.com/300/350');"
+		.project-show-gallery-item style="background-image: url('http://fillmurray.com/300/350');"
+		.project-show-gallery-item style="background-image: url('http://fillmurray.com/300/350');"
+		.project-show-gallery-item style="background-image: url('http://fillmurray.com/300/350');"
+
