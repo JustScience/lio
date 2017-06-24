@@ -56,29 +56,31 @@
 				color: $white;
 				font-size: 240%;
 				opacity: 0;
-				transform: translate(-50%,-50%) scale(0.9);
+				color: $secondary;
+				transform: translate(-50%,-50%) scale(1.8);
 				transition: all 333ms ease-in-out;
 			}
-			&.zudo {
-				background-image: url('laptop1.png');			
-			}
-			&.mkpd {
-				background-image: url('phone1.png');			
-			}
-			&.castr {
-				background-image: url('desktop1.png');			
-			}
-			&.jsci {
-				background-image: url('tablet1.png');			
-			}
+			// &.zudo {
+			// 	background-image: url('laptop1.png');			
+			// }
+			// &.mkpd {
+			// 	background-image: url('laptop-marketpad.png');			
+			// }
+			// &.castr {
+			// 	background-image: url('desktop1.png');			
+			// }
+			// &.jsci {
+			// 	background-image: url('tablet1.png');			
+			// }
 			&:hover {
 				background-color: transparentize($primary,0.2);
-				-webkit-background-size: 48%;
-				     -o-background-size: 48%;
-				        background-size: 48%;
+				-webkit-background-size: 75%;
+				     -o-background-size: 75%;
+				        background-size: 75%;
 				h3 {
 					transform: translate(-50%,-50%) scale(1.2);
 					opacity: 1;
+					color: $white;
 					text-shadow: 0 3px 6px $shadow;
 				}
 
@@ -86,7 +88,7 @@
 					background-image: url('tablet1.png');			
 				}
 				&.mkpd {
-					background-image: url('laptop1.png');			
+					background-image: url('phone-marketpad-2.png');			
 				}
 				&.castr {
 					background-image: url('phone1.png');			

@@ -20,6 +20,7 @@ gem 'greensock-rails'
 gem 'ionicons-rails'
 
 gem 'mail_form'
+gem 'seed_dump'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

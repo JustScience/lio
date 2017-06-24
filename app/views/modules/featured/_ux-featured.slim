@@ -1,14 +1,19 @@
 section.fullscreen.clearfix#feature-project-frame
 	.feature-projects-aside.white.hide-tablet
 		/ h2.center.small Recent Work
-		h3#aside-project-title Recent Work
+		h2 Recent Work
+		h3#aside-project-title data-title=""
 		p#aside-project-description A featured selection of my most recent projects.
 	ul.featured-projects
-		li.project-thumb.white.zudo
-			h3.mid-float.center Zudo Music
-		li.project-thumb.white.mkpd
-			h3.mid-float.center Market Pad
-		li.project-thumb.white.castr
-			h3.mid-float.center CKL Casting
-		li.project-thumb.white.jsci
-			h3.mid-float.center JSci Beats
+		- @projects.each do |project, id|
+			= link_to project_path(project.id)
+				li.project-thumb.white style="background-image:url(#{project.hero_3});"
+					h3.mid-float.center = project.title
+		/ - @projects.each.with_index(1) do |mkpd|
+		/ 	= link_to project_path(1)
+		/ 		li.project-thumb.white style="background-image:url(#{mkpd.hero_4});"
+		/ 			h3.mid-float.center = mkpd.title
+		/ li.project-thumb.white.castr
+		/ 	h3.mid-float.center CKL Casting
+		/ li.project-thumb.white.jsci
+		/ 	h3.mid-float.center JSci Beats

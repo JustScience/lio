@@ -27,28 +27,28 @@ section
 section
 	.project-show-features
 		.project-show-feature-l.clearfix.white
-			.container-narrow.clearfix
+			.js__projectFeature.container-narrow.clearfix
 				.project-show-feature-image
 					= image_tag(@project.hero_2)
 				.project-show-feature-text
 					h2 = @project.feature_1
 
 		.project-show-feature-r.clearfix.off-white
-			.container-narrow.clearfix
+			.js__projectFeature.container-narrow.clearfix
 				.project-show-feature-text
 					h2 = @project.feature_2
 				.project-show-feature-image
 					= image_tag(@project.hero_3)
 
 		.project-show-feature-l.clearfix.white
-			.container-narrow.clearfix
+			.js__projectFeature.container-narrow.clearfix
 				.project-show-feature-image
 					= image_tag(@project.hero_4)
 				.project-show-feature-text
 					h2 = @project.feature_3
 
 		.project-show-feature-r.clearfix.off-white
-			.container-narrow.clearfix
+			.js__projectFeature.container-narrow.clearfix
 				.project-show-feature-text
 					h2 = @project.feature_4
 				.project-show-feature-image
@@ -56,8 +56,8 @@ section
 
 .secondary
 	.project-show-gallery.clearfix
-		.project-show-gallery-item style="background-image: url('http://fillmurray.com/300/350');"
-		.project-show-gallery-item style="background-image: url('http://fillmurray.com/300/350');"
-		.project-show-gallery-item style="background-image: url('http://fillmurray.com/300/350');"
-		.project-show-gallery-item style="background-image: url('http://fillmurray.com/300/350');"
+		.project-show-gallery-item style="background-image: url(#{@project.image_1});"
+		.project-show-gallery-item style="background-image: url(#{@project.image_2});"
+		.project-show-gallery-item style="background-image: url(#{@project.image_3});"
+		.project-show-gallery-item style="background-image: url(#{@project.image_4});"
 
