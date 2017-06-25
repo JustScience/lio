@@ -39,8 +39,8 @@ header {
 			}
 			&:hover {
 				#navbar-logo {
-					fill: $primary;
-					color: $primary;
+					fill: darken($primary,15%);
+					color: darken($primary,15%);
 					// transform: scale(1.1);
 				}
 			}
@@ -86,7 +86,7 @@ header {
 				-webkit-border-radius: 6px;
 				        border-radius: 6px;
 				&:hover {
-					border: 1px solid transparentize($primary,.5);
+					border: 1px solid transparentize($primary-dark,.3);
 				}
 			}
 			a {
@@ -95,7 +95,7 @@ header {
 				font-size: 110%;
 				font-weight: 500;
 				&:hover {
-					color: $primary;
+					color: darken($primary,25%);
 				}
 			}
 		}
@@ -104,7 +104,7 @@ header {
 			fill: lighten($primary,45%);
 			transition: all 333ms ease-in-out;
 			&:hover {
-				fill: $primary;
+				fill: darken($primary,15%);
 			}
 		}
 	}

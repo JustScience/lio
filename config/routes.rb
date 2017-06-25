@@ -12,5 +12,6 @@ Rails.application.routes.draw do
 	get '/pd', to: 'pages#pd', as: 'pd'
 	get '/gd', to: 'pages#gd', as: 'gd'
 	get '/contact', to: 'pages#contact', as: 'contact'
+	get '/outspring', to: 'pages#outspring', as: 'outspring'
 
 end

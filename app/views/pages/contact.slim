@@ -1,10 +1,12 @@
-- provide(:meta_title, 'Contact')
+- provide(:meta_title, 'Hire Me!')
 
 section#contact
 	.container-narrow.clearfix
-		h1.center.page-title HIRE ME
+		h1.center.page-title HIRE ME!
 
-		.contact-info
+		.contact-info.center.clearfix
+			.contact-headshot
+				= image_tag('J_Galenti-Headshot-SQR.png')
 			h1 J Galenti
 			.contact-icons
 				= link_to 'http://www.linkedin.com/in/jgalenti', target: "_blank"
@@ -23,6 +25,28 @@ section#contact
 				| PO Box 24332
 				br
 				| Santa Fe, NM 87502
-		.contact-form
-			form
-				input name="Name"
+
+
+			/ .contact-form
+
+			/ form
+			/ 	input name="Name"
+
+
+section.white
+	.container-narrow
+		h2.center Product & UX Manager
+		br
+		p Driving Collaborative Software Production with a Focus on User Experience utilizing Agile methodologies in a SCRUM style workflow. I design elegant solutions to complex user experiences for mobile and web applications; managing distributed teams of creative and technical talent to plan and execute software from development to production. My career history is vastly diverse, bringing a wide array of uniquely relevant experiences to every project. 
+
+		p People have described me in many ways, including “Prolifically Creative”, “Serial Entrepreneur” and “Motivational Educator.” These are labels I'm proud to have acquired over my 12+ year career as a designer, developer, and multimedia producer. In that time I’ve had many successes, but have also failed many times. It’s those experiences of failure that become fuel for my fire and provide perspective for my future decisions. Though my core motives are those of an artist and entrepreneur, I’ve become a jack-of-many-trades.
+
+		p In the early decade of my career, media production was my game but I frequently found myself in roles of Graphic Designer, UI Developer, and Art Director. In the past 4 years I’ve more commonly held positions of UX Designer, Product Manager, and Creative Director for several small tech startups, as well as Adjunct Faculty in the schools of Film, and Graphic/Communication Design at SFUAD.
+
+		p Regardless of past titles, my work is consistently driven by the philosophic and aesthetic principles of engaging, interactive, and user-centric design. I believe striking yet relatable, and intuitively useful design is a cornerstone of any product, service or brand. I continue to rely on that mentality to guide every decision I make in any role, at any company, in any industry. My vast experiences, creativity & insatiable thirst for knowledge make me an indispensable asset to creative teams in any environment, whether burgeoning startup or established agency.
+
+		= mail_to "indeeparts@gmail.com"
+			.center
+				h5.btn-primary-ghost Email indeeparts@gmail.com to discuss your next project 
+
+

@@ -3,12 +3,23 @@
 		font-size: 300%;
 		margin-bottom: 30px;
 	}
-	.contact-info {
+	.contact-headshot {
 		float: left;
+		width: 30%;
+		margin-right: 30px;
+		img	{
+			-webkit-border-radius: 50%;
+					border-radius: 50%;
+		}
+	}
+	.contact-info {
+		// float: left;
 		width: 49%;
-		margin: 0.5%;
+		// margin: 0.5%;
 		padding: 15px;
 		background: $white;
+		-webkit-box-shadow: 0 12px 21px -15px $shadow;
+				box-shadow: 0 12px 21px -15px $shadow;
 		-webkit-box-sizing: border-box;
 		   -moz-box-sizing: border-box;
 		        box-sizing: border-box;
@@ -34,5 +45,6 @@
 			width: 98%;
 			margin: 1%;
 		}
+
 	}
 }

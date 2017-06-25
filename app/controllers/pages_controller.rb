@@ -24,6 +24,9 @@ class PagesController < ApplicationController
 	def contact
 	end
 	
+	def outspring
+	end
+	
 	private
 		# Use callbacks to share common setup or constraints between actions.
 		def set_project

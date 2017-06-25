@@ -1,7 +1,7 @@
 - provide(:meta_title, @project.title + ' | ' + @project.role) 
 
 section.primary
-	.container-narrow
+	.project-show-header.container-narrow
 		= image_tag(@project.hero_1)
 			
 section
@@ -55,7 +55,7 @@ section
 					= image_tag(@project.hero_5)
 
 .secondary
-	.project-show-gallery.clearfix
+	.project-show-gallery.prefoot-feature.clearfix
 		.project-show-gallery-item style="background-image: url(#{@project.image_1});"
 		.project-show-gallery-item style="background-image: url(#{@project.image_2});"
 		.project-show-gallery-item style="background-image: url(#{@project.image_3});"
